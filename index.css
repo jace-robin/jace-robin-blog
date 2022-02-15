@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+    margin: 10%;
+    flex: 1;
+}
+
+@font-face {
+    font-family: "default-text";
+    src: url(Oswald-VariableFont_wght.ttf);
+}
+
+.nav {
+    list-style-type: none;
+    width: 70%;
+    background-color: aquamarine;
+}
+
+.nav .nav_block:hover {
+    flex: 0;
+    background-color: rgba(154, 76, 228, 0.658);
+    font-size: 25px;
+    border-radius: 5%;
+    transition: .1s;
+}
+
+.nav .nav_block {
+    font-size: 30px;
+    font-family: "default-text";
+    font-weight: unset;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+    color: blue;
+}
