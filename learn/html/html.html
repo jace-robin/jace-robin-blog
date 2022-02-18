@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import "/index.css";
+    </style>
+    <script src="/jquery.js"></script>
+    <script src="/css_helpers.js"></script>
+    <title>HTML</title>
+</head>
+
+<body>
+    <div class="banner banner-left"></div>
+    <div class="banner banner-right"></div>
+    <center>
+        <img class="logo" src="/logo.png">
+        <img class="logo" src="/logo_title.png">
+        <div class="content_body">
+            <div class="nav">
+                <ul class="nav_block">
+                    <a href="#">Setup</a>
+                    <li class="nav_block_dropdown">
+                        <a href="/setup/github/github.html">Github</a>
+                        <a href="/setup/gitpod/gitpod.html">Gitpod</a>
+                    </li>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/resources.html">Resources</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/index.html">Home</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/contact.html">Contact</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="#">Learn</a>
+                    <li class="nav_block_dropdown">
+                        <a href="/learn/html/html.html">HTML</a>
+                        <a href="/learn/css/css.html">CSS</a>
+                        <a href="/learn/javascript/javascript.html">Javascript</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_body">
+                <h1>Welcome</h1>
+                <p>HTML is the most basic structure, as far as I see it. It stands for "Hypertext Markup Language" It
+                    can include many files</p>
+                <p>For now though, lets focus on the foundation</p>
+                <br>
+                <p>All elements start with an opening tag. Some examples include div, p, and h1. The format for these
+                    tags are '&lt;' and '&gt;' </p>
+                <p>Some elements require just the opening tag though, like img, which displays images</p>
+                <br>
+                <p>HTML follows the structure of content placed inside its DOM, or Document Object Model</p>
+                <p>If you have never seen or heard of anything you've read up to this point, don't get too
+                    worried, it's a lot to take in. I'll try my best to take things one at a time</p>
+                <p>The basic structure of the pages I commonly make look like this: </p>
+                <br>
+                <div class="code_div">
+                    <p class="open">!DOCTYPE html</p>
+                    <p class="open">html</p>
+                    <p class="open">head</p>
+                    <p class="open">style</p>
+                    <p class="close">style</p>
+                    <p class="open">script</p>
+                    <p class="close">script</p>
+                    <p class="close">head</p>
+                    <p class="open">body</p>
+                    <p class="close">body</p>
+                    <p class="close">html</p>
+                </div>
+                <br>
+                <p>This code currently displays nothing on the users end, nor does it have any styling. It is more of a
+                    template, which you can fill in with anything you choose</p>
+                <p>The DOCTYPE tag identifies this file as a HTML file. The html tag should always encompass every tag,
+                    excluding the DOCTYPE</p>
+                <p>The head tag contains information that the page uses, but does not display content visible to the
+                    user, such as CSS styling and code that can be used for responsive pages. The body tag is where you
+                    will be putting what you want the user to see, and what we will focus on next</p>
+                <p>To start, lets display some basic text, using the &lt;p&gt; element inside our body tags. This is a
+                    paragraph, and is often used for basic text. Here, we will use it to display the text "Hello World!"
+                </p>
+                <br>
+                <div class="code_div">
+                    <p class="open">body</p>
+                    <p class="open">p</p>
+                    <p class="ht_txt">Hello World!</p>
+                    <p class="close">p</p>
+                    <p class="close">body</p>
+                </div>
+                <br>
+                <p>Output: </p>
+                <div class="out_div">
+                    <p>Hello World!</p>
+                </div>
+                <p>Note that the fonts I use here are not the default font, so your result will look slightly different
+                </p>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>

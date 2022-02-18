@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import "/index.css";
+    </style>
+    <script src="/jquery.js"></script>
+    <script src="/css_helpers.js"></script>
+    <title>Gitpod</title>
+</head>
+
+<body>
+    <div class="banner banner-left"></div>
+    <div class="banner banner-right"></div>
+    <center>
+        <img class="logo" src="/logo.png">
+        <img class="logo" src="/logo_title.png">
+        <div class="content_body">
+            <div class="nav">
+                <ul class="nav_block">
+                    <a href="#">Setup</a>
+                    <li class="nav_block_dropdown">
+                        <a href="/setup/github/github.html">Github</a>
+                        <a href="/setup/gitpod/gitpod.html">Gitpod</a>
+                    </li>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/resources.html">Resources</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/index.html">Home</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="/contact.html">Contact</a>
+                </ul>
+                <ul class="nav_block">
+                    <a href="#">Learn</a>
+                    <li class="nav_block_dropdown">
+                        <a href="/learn/html/html.html">HTML</a>
+                        <a href="/learn/css/css.html">CSS</a>
+                        <a href="/learn/javascript/javascript.html">Javascript</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_body">
+                <h1>What is Gitpod?</h1>
+                <p>Gitpod is an oline service that lets you access code on github through a github account, and has
+                    every feature in Visual Studio Code, a popular IDE made by Microsoft.</p>
+                <p>It has thousands of extensions that help you code faster, and more effectively. I use many extensions
+                    that greatly speed up the tedious parts of coding. They will be listed further down in the tutorial,
+                    and I highly advise them. You'll thank me later, trust me</p>
+                <h1>Signing in to Gitpod</h1>
+                <p>To start, visit<a style="color: blue" href="https://gitpod.io"> gitpod </a>(again, click to be
+                    redirected)</p>
+                <p>Next, click sign in with github. If you are already signed in on github, it should automatically sign
+                    you in, but if not, just type in the username and password you used prior.</p>
+                <p>Also,if it asks for permissions now, check every box. This is extremely important, do not miss a box!
+                </p>
+                <h1>Adding a Repository</h1>
+                <p>For this next step, you will need to open the repository you made previously on github.</p>
+                <p>The process for adding a new repo to your gitpod workspaces is simple luckily.</p>
+                <p>First, copy the URL in the search bar. You need to have 'https://' before though, so after clicking,
+                    just click once more a bit after the first, this will expand it so that you can copy the entire URL.
+                </p>
+                <p>Next, make a new browser tab. Type in 'https://gitpod.io/#' and then paste the url you copied. For
+                    example: https://gitpod.io/#https://github.com/john-doe/john-doe.github.io</p>
+                <p>Gitpod will automatically create a workspace for you with the files in the repo</p>
+                <h1>Adding Permissions</h1>
+                <p>To be able to update the code on github, you will need to give Gitpod permissions to use your account
+                </p>
+                <p>To do so, make a new browser tab. Visit gitpod.io again, and click your profile once it loads. This
+                    can be found on the top right of the page, and has a profile picture provided by your github
+                    account. Alternatively, you can just click Settings on the main page</p>
+                <p>Click 'Integrations'. Here, you can see account associated with your gitpod account. Click the three
+                    vertical dots to the right of the github account, then 'Edit Permissions'</p>
+                <p>Next, make sure every box is clicked. Once done, click 'Update Permissions'</p>
+                <h1>Using Your New Workspace</h1>
+                <p>Your code can now be accessed by clicking 'Workspaces' on the home page of gitpod. It is also
+                    important that you click the three dots next to it, and click 'Pin Workspace'. If you do not, then
+                    after 14 days of inactivity, teh gitpod workspace will be deleted, and any changes not sent to
+                    github will be lost</p>
+                <p>To open the workspace, click the name, and you will be redirected to the IDE</p>
+                <p>In terms of use, it should work fine for now, but some extensions will help you greatly</p>
+                <h1>Extensions</h1>
+                <p>Extensions provide many useful tools that are vital for coding quickly</p>
+                <p>To add them, click the icon that looks like 3 stacked boxes, with one lifted.</p>
+                <p>There are a few extensions installed automatically by gitpod, but heres a few I use a lot, and how to
+                    use them effectively</p>
+                <p>Beautify-HookyQR(auto indent code for better readability)</p>
+                <p>Github Pull Requests And Issues-Github(used to pull updates to your github repo, if updated from an
+                    external source</p>
+                <p>Live Server-ritwickdey(allows you to open a test page containing the content of your current file)
+                </p>
+                <br>
+                <p>I recommend binding Beautify File(A beautify command) to a key combination. I use 'ctrl+shift+a', but
+                    whatever fits you better will work just as well.</p>
+                <p>To do this, hold 'ctrl+shift+p' and type in Beautify. One of the first results should be Beautify
+                    File. Click the gear icon, then +. hold whichever key combination you want, and then press enter. It
+                    may be as short or as long as you like, just remember that you might use this a lot!</p>
+                <br>
+                <p>You may also not like how your workspace looks, which is fine, because white light can be blinding.
+                </p>
+                <p>Luckily, you can add extensions that change the colors and syntax highlighting of your code! Simply
+                    look up themes in the search bar, and look around for one you like.</p>
+                <p>My current theme is Raspberry Candy(original). It all comes to your preference though, there are tons
+                    of nice themes, and they are fun to look through and find one you enjoy using!</p>
+                <h1>Git Commands</h1>
+                <p>Git commands are bits of code that are typed into the terminal at the bottom of your screen. If you dont see it, dont worry, you can make a new one by pressing the three lines on the top right of your screen, and then hovering over terminal. Clicking 'New Terminal' should make a new one appear!</p>
+                <p>There are three main commands that you will use for now. These should be typed in order every time you want to send the code to github to update your files</p>
+                <br>
+                <p>git add .</p>
+                <p>git commit -m "add a description here of what you changed!"</p>
+                <p>git push</p>
+                <br>
+                <p>With these commands, it should push your changes to github. If you visit the repo there, you should see any changes you have made</p>
+                <p>If you dont understand what each command does, for now, dont sweat it. If you want more information, you can find tons of tutorials online</p>
+                <p>Another useful command is 'git pull' and 'git merge'</p>
+                <p>These commands will pull the changes from github that are not on your current device. If you are using multiple computers, this is important to know. Just make sure that you push your current changes with the above commands first, or you will get an error!</p>
+            </div>
+    </center>
+</body>
+
+</html>
